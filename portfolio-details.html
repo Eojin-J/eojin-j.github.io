@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Ronin Multi</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/eojin4.png" alt=""></a>
+<!-- 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button> -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+<!-- 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+										<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Project Details</a></li>
+										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div>  -->
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Portfolio Details</h2>
+						<div class="page_link">
+							<a href="index.html">Home</a>
+<!-- 							<a href="services.html">Portfolio</a>
+							<a href="services.html">Portfolio Details</a> -->
+						</div>
+						
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Portfolio Details Area =================-->
+        <section class="portfolio_details_area p_120">
+        	<div class="container">
+        		<div class="portfolio_details_inner">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="left_img">
+								<img class="img-fluid" src="img/projects/RDS_image.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="portfolio_right_text">
+								<h4>X-ray Diagnostic Study of NRDS</h4>
+								<p>Development and evaluation of deep learning-based algorithms that can diagnose neonatal respiratory distress syndrome only with X-ray images</p>
+								<ul class="list">
+									<!-- <li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li> -->
+									<li><span>Duration</span>:  Jan. 2022 - Dec.2022</li>
+									<li><span>Member</span>: Eojin Jang, Hanyong Cho</li>
+									<li><span>Others</span>: Capstone Design</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+       				<p>본 연구는 DICOM 형식으로 주어진 데이터를 PNG로 바꾸는 과정을 거쳤다. 분할한 폐 영역을 보고 RDS를 진단해야 하기 때문에 데이터셋을 구성할 때 폐 영역 정보를 고려하였다. 폐 영역 넓이를 기준으로 정렬하고 RDS 질환 유무에 따라 5개 그룹으로 나눴다. 각 그룹은 약 127장의 데이터를 포함하고 있다. 그 중 3개 그룹을 학습용 데이터셋, 1개 그룹을 검증 데이터셋, 1개 그룹을 테스트 데이터셋으로 활용했고 이를 통해 모델의 학습과 검증을 수행했다.
+ UNet을 통해 신생아의 폐 영역을 분할하는 모델을 개발했다. 모델을 학습하기 위해 반복 학습주기(epoch)는 150, 배치 크기(batch size)는 16, 초기 학습률(learning rate)은 0.001로 설정하고 이후 50번의 학습주기를 초과할 때마다 기존 학습률의 1/10 배로 낮추었다. 또한, 인코더는 ImageNet 데이터셋으로 사전 학습된 EfficientNet-B5를 사용하였다. 후처리를 적용하지 않았을 때의 검증 데이터 셋 기준 MIoU score는 0.83으로 나타났다. 이후, 분석했을 때 질환을 진단하기에 부족한 이미지들이 존재하여 추가적인 후처리를 진행했다. 입력 영상을 회전시켜 여러 개의 영상의 평균 예측값을 획득하는 방법과 예측한 폐 영역 이미지에 중간값 필터를 적용하는 방법이다. 폐 영역의 평균 픽셀 수는 약 100,000개이고 예측한 폐 영역 픽셀 수가 30,000개 이하일 때는 분할 모델의 성능이 크게 하락하였다. 따라서 해당 이미지에 대해 시계, 반시계 방향 90도 회전을 수행하고 각각 분할을 진행하여 평균 예측값을 획득하였고 성능 향상을 보였다. 또한, 분할된 영역 가운데 구멍이 뚫린 것처럼 나타나는 경우가 있었다. 이 문제를 해결하기 위해 폐 영역 분할 예측값에 중간값 필터를 적용하였다. 최종적으로 얻은 성능은 표 1과 같다. 
+ 가장 높은 mIoU score를 보이는 분할 모델로 폐 영역 분할 이미지를 얻었다. 이를 바탕으로 ImageNet 데이터셋으로 사전 학습된 모델을 전이학습했다. 학습에 사용한 파라미터는 반복 학습주기 100, B0의 배치 크기 48부터 B3는 24, B5는 12로 줄여서 학습하였고, 학습률 0.001로 설정하였다. 해당 모델로 얻은 결과는 표 2과 같다.</p>
+ 					<!-- <div class="col-md-6" float:left;> -->
+ 					<table border="0.5" width ="500" height="300" style="float:left;">
+ 						    <tr align ="center">
+							<p><td colspan = "4" span >[표 1] 분할 성능 </td></p>
+						    </tr>
+						<tr align ="center">
+						<th>Network</th>
+						<th>중간값필터</th>
+						<th>회전 후처리</th>
+						<th>mIoU</th>
+					</tr>
+						<tr align ="center">
+						    <td>UNet</td>
+						    <td>X</td>
+						    <td>X</td>
+						    <td>0.834</td>
+						</tr>
+						<tr align ="center">
+						    <td>UNet</td>
+						    <td>O</td>
+						    <td>X</td>
+						    <td>0.847</td>
+						</tr>
+						<tr align ="center">
+						    <td>UNet</td>
+						    <td>O</td>
+						    <td>O</td>
+						    <td>0.913</td>
+						</tr>
+
+				    </table>
+				    <!-- </div> -->
+
+<!-- 				    <div class="col-md-6" float:right;> -->
+				     <table border="0.5" width ="500" height="300" style="float:Right;">
+ 						    <tr align ="center">
+							<p><td colspan = "4" span >[표 2] 진단 성능 </td></p>
+						    </tr>
+						<tr align ="center">
+						<th>Network</th>
+						<th>정확도</th>
+					</tr>
+						<tr align ="center">
+						    <td>EfficientNet B0</td>
+						    <td>0.773</td>
+						</tr>
+						<tr align ="center">
+						    <td>EfficientNet B3</td>
+						    <td>0.797</td>
+						</tr>
+						<tr align ="center">
+						    <td>EfficientNet B5</td>
+						    <td>O.852</td>
+						</tr>
+
+				    </table>
+					<!-- </div> -->
+
+					<p><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					위에서 얻은 진단 모델로 가중치를 시각화했을 때 그림 1의 중앙과 같이 삽관 영역에 높은 가중치가 만들어졌다. 그래서 높은 가중치가 만들어지는 삽관 영역을 제거하여 다시 학습하고 Grad-CAM 시각화를 진행했다. 그에 대한 결과물로 그림 2를 확인할 수 있다.
+					</p>
+					<div class="left_img" style="float:left;">
+						<img class="img-fluid" width ="500" height="300" src="img/projects/RDS_2.png" alt="">
+					</div>
+
+					<div class="left_img" style="float:Right;">
+						<img class="img-fluid" width ="600" height="300" src="img/projects/RDS_3.png" alt="">
+					</div>
+					<p><br><br><br><br><br><br><br><br><br><br><br><br><br> 신생아 호흡곤란 증후군(RDS)는 주로 미숙아에게 가장 흔하게 발생하고 치명적인 호흡기 질환이다. 최근 고령 산모, 시험관 시술, 제왕절개 등이 증가 됨에 따라 RDS가 발생하는 신생아들이 증가하고 있다. 또한, 미숙아 사망 주요 원인 1위가 RDS인 만큼 심각한 문제이다. 현재 영상의학 분야에서는 RDS를 X-ray 영상을 가지고 판단하며, 폐 영역만을 보고 판단한다. 또한, 딥러닝 모델의 신뢰성을 높이기 위해 Grad-CAM을 통해 결과를 시각화하여 해당 모델이 전문가들이 원하는 부분을 보고 진단했는지를 보여준다. 이러한 결과는 더 빠르고, 더 정확한 RDS 진단을 가능하게 하여 많은 RDS로 고통을 받고있는 미숙아들에게 더 빠르고 적절한 치료가 가능하게 할 수 있다.
+ 현재 의료 시장은 의료 인력과 환자 간의 불균형으로 인한 의료 서비스에 대한 필요성이 증가하고 있다. 또한, 전 세계 의료용 인공지능 시장은 연평균 40% 이상의 성장률을 보이며 2026년에 시장 규모가 450억 달러에 이를 것으로 전망되고 있다. 딥러닝 모델을 이용해 질병 진단을 하는 경우 초기에 학습한 모델이 있다면 이후 과정에서는 크게 비용이 증가 되지 않고 사용 가능하므로 지속 가능한 수익모델이다. </p>
+
+        		</div>
+        	</div>
+        </section>
+        <!--================End Portfolio Details Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Email : ej2b514@gmail.com<br>
+        					Open Kakaotalk : https://open.kakao.com/o/s3csgskd</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="https://github.com/Eojin-J"><i class="fa fa-github"></i></a></li>
+        						<li><a href="https://comgenie.tistory.com/"><i class="fa fa-rss"></i></a></li>
+        						<li><a href="https://namecard.kakao.com/EJAI"><i class="fa fa-comments-o"></i></a></li>
+        						<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
